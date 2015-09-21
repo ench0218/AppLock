@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/unLock"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivityFragment"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:text="应用程序(50)"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_unLock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <RelativeLayout
+        android:id="@+id/pgb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        >
+    <ProgressBar
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+        <TextView
+            android:paddingTop="20dp"
+            android:layout_below="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拼命加载中...."
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

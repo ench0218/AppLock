@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_unLock_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/tab_left_pressed"
+            android:gravity="center"
+            android:text="未锁定" />
+
+        <TextView
+            android:id="@+id/tv_lock_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/tab_right_default"
+            android:gravity="center"
+            android:text="已锁定" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/lock_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </FrameLayout>
+
+
+</LinearLayout>
+
